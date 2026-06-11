@@ -17,7 +17,7 @@ ProjectForge es un **system prompt portable** con dos capas:
 4. **Opina con criterio senior** — no solo levanta información, recomienda
 5. **Genera el kit multi-host** adaptado a las herramientas de cada dev del equipo
 
-**Capa Orquestador (runtime):** el kit generado convierte a la IA del proyecto en un orquestador ("Jarvis") que procesa cada tarea, historia de usuario o bug mediante un **pipeline de roles especializados** con memoria persistente vía [engram](https://github.com/Gentleman-Programming/engram).
+**Capa Orquestador (runtime):** el kit generado convierte a la IA del proyecto en un orquestador que procesa cada tarea, historia de usuario o bug mediante un **pipeline de roles especializados** con memoria persistente vía [engram](https://github.com/Gentleman-Programming/engram).
 
 ---
 
@@ -133,7 +133,7 @@ AL CERRAR ETAPA     → mem_save (What/Why/Where/Learned, topic key = ID tarea)
 AL CERRAR SESIÓN    → engram sync + commit de .engram/
 ```
 
-- **Por proyecto:** una sola instalación, memorias aisladas automáticamente por proyecto — tus proyectos personales no se mezclan con los de la empresa.
+- **Por proyecto:** una sola instalación, memorias aisladas automáticamente por proyecto.
 - **Por equipo:** `engram sync` viaja por Git — el dev de Cursor ve las decisiones que guardaste desde Claude Code.
 - **Conflictos:** si una decisión nueva contradice una vieja, engram lo detecta y el agente marca `supersedes`.
 - **Separación estricta:** reglas estables → `documents/` · historia episódica → engram. Nunca al revés.
@@ -261,8 +261,7 @@ Orquestador: 🧭 Triaje: HU-042
 projectforge/
 ├── projectforge-v3-prompt.md   ← El system prompt de ProjectForge v3
 ├── README.md                   ← Esta guía
-└── examples/
-    └── urvi/                   ← Ejemplo de kit generado
+
 ```
 
 ---
